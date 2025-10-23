@@ -9,7 +9,10 @@ import { Api } from '../api';
 })
 export class DashboardPage implements OnInit {
 
-  constructor(private apiService:Api) { }
+  constructor(private apiService:Api) {}
+
+    dados:any[] = []
+
 
   ngOnInit() {
     this.carregarDados();
@@ -20,6 +23,8 @@ export class DashboardPage implements OnInit {
     this.apiService.getSensores().subscribe ({
       next: (data: any[]) => {
         console.log (data)
+        this.dados = data
+        
       }, error : (erro) => {
         console.log (erro);
       }

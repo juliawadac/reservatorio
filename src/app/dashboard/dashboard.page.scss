@@ -1,0 +1,39 @@
+ion-toolbar {
+    --background: linear-gradient(135deg, #0077b6, #0096c7);
+    --color: #fff;
+  }
+  
+  .dados-content {
+    --background: #f2f8fb;
+    padding: 16px;
+  }
+  
+  .dados-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .dados-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  ion-card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    color: #023e8a;
+  }
+  
+  ion-item {
+    --inner-padding-end: 0;
+    --inner-padding-start: 0;
+    --background: transparent;
+  }
+  
+  ion-label strong {
+    color: #03045e;
+  }
+  
